@@ -13,10 +13,10 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
   .js('resources/assets/js/user/app.js', 'build/js/userApp.js')
+  .js('resources/assets/js/authentication.js', 'build/js/authentication.js')
   .js('resources/assets/js/note/app.js', 'build/js/noteApp.js')
    .sass('resources/assets/sass/app.scss', 'public/css')
-  .styles(['resources/assets/css/main-style.css'], 'public/build/css/main-style.css')
-;
+  .styles(['resources/assets/css/main-style.css'], 'public/build/css/main-style.css');
 
 
 mix.disableSuccessNotifications();
